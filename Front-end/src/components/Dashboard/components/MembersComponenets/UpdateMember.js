@@ -19,7 +19,7 @@ const UpdateMember = (props) => {
     const [weight,setWeight] = useState('')
     const [gender,setGender] = useState('')
     const [joindate,setJoinDate] = useState('')
-    const [validedate,setValidDate] = useState('')
+    const [validdate,setValidDate] = useState('')
     //const [successful, setSuccessful] = useState(false);
 
   const [allmembersList, setAllMemebersList] = useState([])
@@ -59,8 +59,8 @@ const UpdateMember = (props) => {
         setJoinDate(joindate);
       };
     const onChangeValidDate = (e) => {
-        const validedate = e.target.value;
-        setValidDate(validedate);
+        const validdate = e.target.value;
+        setValidDate(validdate);
       };
 
     const cleareAll = (e) => {
@@ -156,13 +156,13 @@ const UpdateMember = (props) => {
                     onChange={onChangeJoinDate}></input>
                 </div>
                 <div className='col-md-2'>
-                    <label htmlFor='validedate'>Valide Date</label>
+                    <label htmlFor='validdate'>Valid Date</label>
                     <input 
                     style = {inputstyle} 
                     type='date' 
                     className='form-control form-control-sm'
-                    name='validedate'
-                    defaultValue={validedate}
+                    name='validdate'
+                    defaultValue={validdate}
                     onChange={onChangeValidDate}></input>
                 </div>
             </div>

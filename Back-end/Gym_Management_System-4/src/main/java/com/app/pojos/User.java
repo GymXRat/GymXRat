@@ -11,9 +11,11 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.PrePersist;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.Getter;
@@ -32,7 +34,6 @@ public class User extends BaseEntity {
 	private String contact;
 	private String email;
 	private String password;
-	@Column(columnDefinition = "varchar(255) default 'user'")
 	private String role;
 	private int question;
 	private String answer;
@@ -54,6 +55,7 @@ public class User extends BaseEntity {
 
 	public User() {
 		this.planList = new ArrayList<Plan>();
+	    this.role = "user"; 
 	}
 
 	public void addPlan(Plan plan) {
@@ -63,4 +65,5 @@ public class User extends BaseEntity {
 	public void removePlan(Plan plan) {
 		planList.remove(plan);
 	}
+	
 }

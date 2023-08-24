@@ -54,7 +54,7 @@ public class AdminController {
 		return Response.success(plans);
 	}
 
-	@RequestMapping("/getallusers")
+	@RequestMapping("/getAllUsers")
 	public ResponseEntity<?> getAllUsers() {
 		List<User> list = userService.getAllUsers();
 		for (User u : list)
@@ -64,7 +64,7 @@ public class AdminController {
 		return Response.success(allusers);
 	}
 
-	@RequestMapping("/deleteuser")
+	@RequestMapping("/deleteUser/{id}")
 	public ResponseEntity<?> deleteUser(@RequestBody Credentials cred) {
 		userService.deleteUser(cred);
 		return Response.success("success");
@@ -82,7 +82,7 @@ public class AdminController {
 		return Response.success("success");
 	}
 
-	@RequestMapping("/deleteTrainer")
+	@RequestMapping("/deleteTrainer/{trainerId}")
 	public ResponseEntity<?> deleteTrainer(@RequestBody TrainerDto trainerDto) {
 		trainerService.deleteTrainer(trainerDto);
 		return Response.success("success");

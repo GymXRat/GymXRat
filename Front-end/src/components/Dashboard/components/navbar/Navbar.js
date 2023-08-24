@@ -28,18 +28,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-light vavProp">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-light vavProp">
+      <div className="container-fluid">
         <Link className="btn btn-info " to="/Home">
-          <b class="text-white">FitWay</b>
+          <b className="text-white">GymXRat</b>
         </Link>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <a className="nav-link">Welcome {isUser}</a>
           </li>
         </ul>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav rightMost ">
+        <div className="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul className="navbar-nav rightMost ">
             <button
               className="btn btn-outline-success my-2 my-sm-0"
               onClick={logout}
