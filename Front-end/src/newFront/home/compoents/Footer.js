@@ -36,7 +36,7 @@ function Footer() {
               </ul>
             </div>
             <div class="col-md-6 item text">
-              <h3>FITWAY</h3>
+              <h3>GymXRat</h3>
               <p>
                 If we could give every individual the right amount of
                 nourishment and exercise, not too little and not too much, we
@@ -59,7 +59,7 @@ function Footer() {
             </div>
           </div>
           <br />
-          <p class="copyright bringCenter">FITWAY.ltd © 2018</p>
+          <p class="copyright bringCenter">GymXRat.ltd © 2018</p>
         </div>
       </footer>
     </div>

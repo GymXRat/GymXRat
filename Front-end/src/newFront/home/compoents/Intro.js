@@ -45,7 +45,7 @@ function Intro() {
             {" "}
             BUILD <b class="h1maintitlecolor">STRENGTH</b>
           </h3>
-          <h3 className="fontBold">IN <b class="h1maintitlecolor fontBold"> FITWAY</b></h3>
+          <h3 className="fontBold">IN <b class="h1maintitlecolor fontBold"> GymXRat</b></h3>
           
           <p>
             <h5>

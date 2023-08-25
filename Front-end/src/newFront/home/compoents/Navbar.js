@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav class="navbar navbar-expand-lg navbar-light vavProp">
       <div class="container-fluid">
         <NavLink className="btn btn-info " to="/">
-          <b class="text-white">FitWay</b>
+          <b class="text-white">GymXRat</b>
         </NavLink>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">

@@ -61,7 +61,7 @@ const SignUp = (props) => {
       const handleRegister = () => {
 
         if(password == null || password < password.length){
-            alert("pleas set password")
+            alert("please set password")
         }
 
         console.log(complete_name,contact,email,password,question,questionans)
@@ -100,11 +100,11 @@ const SignUp = (props) => {
                 </div>
                 <div className='form-group col-md-4'>
                     
-                        <label htmlFor='username'>User Name</label>
+                        <label htmlFor='username'>Full Name</label>
                         <input 
                         className='form-control ' 
                         type='text' 
-                        placeholder='Enter User Name'
+                        placeholder='Enter Full Name'
                         value={complete_name}
                         onChange={onChangecomplete_name}></input>
                     
@@ -145,7 +145,7 @@ const SignUp = (props) => {
                 </div>
                 <div className='form-group col-md-4'>
                     
-                <label htmlFor='question'>Question</label>
+                <label htmlFor='question'>Security Question</label>
                     <select 
                     id='question' 
                     style = {inputstyle} 
