@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav class="navbar navbar-expand-lg navbar-light vavProp">
       <div class="container-fluid">
         <button className="btn btn-info " onClick={goHome}>
-          <b class="text-white">FitWay</b>
+          <b class="text-white">GymXRat</b>
         </button>
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
